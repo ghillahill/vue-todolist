@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 360px;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+.todo-box {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+}
