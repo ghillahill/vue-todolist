@@ -27,12 +27,9 @@
     justify-content: space-around;
 }
 
-
 ul {
     list-style-type: none;
 }
-
-
 
 ul li {
     cursor: pointer;
