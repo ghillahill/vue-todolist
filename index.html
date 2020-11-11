@@ -18,9 +18,9 @@
                 </div>
                 <div class="todo-box">
                     <!-- Creo Input Tag per inserire i successivi todo items-->
-                    <input type="text" value="">
+                    <input type="text" v-model="new_item">
                     <!-- Creo un Button che mi permette di aggiungere un todo item alla lista-->
-                    <button type="button" name="button">Aggiungi</button>
+                    <button @click="addNewTodo()" type="button" name="button">Aggiungi</button>
                     <!-- Creo un ul contenente gli li come todo items -->
                     <ul class="list-item">
                         <li v-for="item in item_list">

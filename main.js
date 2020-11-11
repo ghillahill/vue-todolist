@@ -7,10 +7,13 @@ var app = new Vue({
             'Pulire casa',
             'Mangiare',
             'Coding time!'
-        ]
+        ],
+        new_item: ''
     },
     methods: {
-
+        //Funzione che aggiunge elemento scritto su Input nell'array item_list
+        addNewTodo(){
+            this.item_list.push(this.new_item);
+        }
     },
-
 });
