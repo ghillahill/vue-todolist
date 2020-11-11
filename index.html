@@ -18,7 +18,7 @@
                 </div>
                 <div class="todo-box">
                     <!-- Creo Input Tag per inserire i successivi todo items-->
-                    <input type="text" v-model="new_item">
+                    <input v-on:keyup="addOnEnter"type="text" v-model="new_item">
                     <!-- Creo un Button che mi permette di aggiungere un todo item alla lista-->
                     <button @click="addNewTodo()" type="button" name="button">Aggiungi</button>
                     <!-- Creo un ul contenente gli li come todo items -->
