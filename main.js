@@ -8,12 +8,17 @@ var app = new Vue({
             'Mangiare',
             'Coding time!'
         ],
-        new_item: ''
+        new_item: '',
+        index: ''
     },
     methods: {
         //Funzione che aggiunge elemento scritto su Input nell'array item_list
         addNewTodo(){
             this.item_list.push(this.new_item);
+        },
+        //Creo funzione che al click di un elemento di item_list venga rimosso.
+        removeItem(index){
+            this.$delete(this.item_list, index);
         }
     },
 });

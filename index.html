@@ -14,7 +14,7 @@
 
             <div class="container">
                 <div class="title">
-                    <h1>To Do List</h1>
+                    <h1>ToDo List</h1>
                 </div>
                 <div class="todo-box">
                     <!-- Creo Input Tag per inserire i successivi todo items-->
@@ -23,7 +23,8 @@
                     <button @click="addNewTodo()" type="button" name="button">Aggiungi</button>
                     <!-- Creo un ul contenente gli li come todo items -->
                     <ul class="list-item">
-                        <li v-for="item in item_list">
+                        <li v-for="item, index in item_list" @click="removeItem(index)">
+                            <i class="fas fa-check-square"></i>
                             {{item}}
                         </li>
                     </ul>
